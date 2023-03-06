@@ -1,0 +1,46 @@
+<%- include('./partials/head.ejs') %>
+
+<main>
+  <section class="filter-bar">
+    <div class="inner-bar">
+        <div class="squad-select">
+            <a href="/?squad=squad-a-2022" class="filterBTN">Squad A</a>
+            <a href="/?squad=squad-b-2022" class="filterBTN">Squad B</a>
+            <a href="/?squad=squat-c-2022" class="filterBTN">Squad C</a>
+        </div>
+        <div class="filter-select">
+            <a href="/?squad=<%= squad.slug %>&orderBy=name" class="filterBTN">Voornaam</a>
+            <a href="/?squad=<%= squad.slug %>&orderBy=surname" class="filterBTN">Achternaam</a>
+            <a href="/?squad=<%= squad.slug %>&orderBy=gitHubHandle" class="filterBTN">GitHub naam</a>
+        </div>
+    </div>
+</section>
+
+<div class="dropdown">
+  <span>Show first letter only</span>
+  <div class="dropdown-content">
+    <a href="/?squad=<%= squad.slug %>&firstLetter=a" >A</a>
+    <a href="/?squad=<%= squad.slug %>&firstLetter=b" >B</a>
+    <a href="/?squad=<%= squad.slug %>&firstLetter=c" >C</a>
+  </div>
+</div>
+
+
+  <hr />
+  <section>
+    <!-- Hier komen de members -->
+    <% squad.members.forEach(member => { %>
+    <article>
+      <% if (member.avatar) { %>
+      <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+      <% }else{ %>
+      <img src="/placeholder.jpg" alt="Placeholder avatar" />
+      <% } %>
+
+      <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+    </article>
+    <% }) %>
+  </section>
+</main>
+
+<%- include('./partials/foot.ejs') %>
