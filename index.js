@@ -13,16 +13,10 @@ app.use(express.static('public'))
 // Maak een route voor de index
 app.get('/', (request, response) => {
   console.log(request.query.squad)
-  let { firstLetter } = request.query  
-
-  let slug = request.query.squad || 'squad-a-2022'
-  let orderBy = request.query.orderBy || 'name'
-  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC' + 'firstLetter=' + firstLetter
+  
 
   fetchJson(squadUrl).then((data) => {
 
-    console.log(squadUrl) 
-    // TODO: als het filterByFirstLetter filter aan staat, filter dan hier alle members die niet een bepaalde firstLetter hebben
     response.render('index', data)
   })
 })
