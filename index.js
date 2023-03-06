@@ -1,6 +1,6 @@
 import express from 'express'
 
-const url = 'https://whois.fdnd.nl/api/v1/squad/'
+const url = 'https://api.codingthecurbs.fdnd.nl/'
 
 // Maak een nieuwe express app
 const app = express()
