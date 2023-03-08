@@ -1,7 +1,7 @@
 {
-  "name": "connect-your-tribe-squad-page",
-  "version": "1.0.0",
-  "description": "Redesign met je squad een squadpagina op basis van een bestaande API.",
+  "name": "server-side-rendering",
+  "version": "0.0.1",
+  "description": "Het is een live-coded voorbeeld van SSR voor de Ad FDND.",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fdnd-task/connect-your-tribe-squad-page.git"
+    "url": "git+https://github.com/ju5tu5/server-side-rendering.git"
   },
   "keywords": [
     "node",
@@ -21,13 +21,12 @@
     "ejs"
   ],
   "author": "J.P. Sturkenboom <j.p.sturkenboom@hva.nl>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fdnd-task/connect-your-tribe-squad-page/issues"
+    "url": "https://github.com/ju5tu5/server-side-rendering/issues"
   },
-  "homepage": "https://github.com/fdnd-task/connect-your-tribe-squad-page#readme",
+  "homepage": "https://github.com/ju5tu5/server-side-rendering#readme",
   "dependencies": {
-    "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2"
   }

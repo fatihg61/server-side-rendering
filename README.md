@@ -1,5 +1,6 @@
-# connect-your-tribe-squad-page
+# Server Side Rendering
 
+Een live-coded voorbeeld van Server Side Rendering (SSR) voor de Ad Frontend Design & Development.
 
 ## Inhoudsopgave
 
@@ -12,30 +13,20 @@
 
 ## Beschrijving
 
-Een live-coded voorbeeld van een overzichtspagina gemaakt met Express.js en EJS, welke gebruik maakt van configuratie in een `.env` bestand.
+<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+<!-- Voeg een mooie poster visual toe 📸 -->
+<!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
 
-## Installatie
+<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-1. Fork en clone de code
-2. Voer npm install uit in de projectmap
-3. Voer npm start uit en open het voorbeeld in je browser
+## Installatie
 
 ## Gebruik
 
 ## Bronnen
 
-https://expressjs.com/en/4x/api.html
-
-https://ejs.co/
-
-https://www.npmjs.com/package/dotenv
-
-https://whois.fdnd.nl/docs/squad#slug
-
 ## Licentie
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
+This project is licensed under the terms of the [MIT license](./LICENSE).

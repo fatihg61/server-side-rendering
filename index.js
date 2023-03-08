@@ -1,6 +1,6 @@
 import express from 'express'
 
-const url = 'https://api.codingthecurbs.fdnd.nl/'
+const url = 'https://api.programma.fdnd.nl/api/v1'
 
 // Maak een nieuwe express app
 const app = express()
@@ -12,18 +12,29 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  console.log(request.query.squad)
-  
+  let semesterUrl = url + '/semesters'
 
-  fetchJson(squadUrl).then((data) => {
-
+  fetchJson(semesterUrl).then((data) => {
     response.render('index', data)
   })
 })
 
-// app.get('/members', (request, response) => {
-//   response.send('Joepie!!')
-// })
+app.get('/sprint', (request, response) => {
+  let slug = request.query.sprintSlug || 'your-tribe'
+  let sprintUrl = url + '/sprint/' + slug
+  fetchJson(sprintUrl).then((data) => {
+    // console.log(data)
+    response.render('sprint', data)
+  })
+})
+
+app.get('/over', (request, response) => {
+  response.render('over')
+})
+
+app.get('/contact', (request, response) => {
+  response.render('contact')
+})
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
