@@ -1,6 +1,7 @@
+import { name } from 'ejs'
 import express from 'express'
 
-const url = 'https://api.programma.fdnd.nl/api/v1'
+const url = 'https://api.codingthecurbs.fdnd.nl/api/v1'
 
 // Maak een nieuwe express app
 const app = express()
@@ -12,19 +13,20 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  let semesterUrl = url + '/semesters'
+  let smartzonesUrl = url + '/smartzones'
 
-  fetchJson(semesterUrl).then((data) => {
-    response.render('index', data)
+  fetchJson(smartzonesUrl).then((data) => {
+    console.log(data)
+    response.render('index', { smartzones: data.smartzones })
   })
 })
 
-app.get('/sprint', (request, response) => {
-  let slug = request.query.sprintSlug || 'your-tribe'
-  let sprintUrl = url + '/sprint/' + slug
-  fetchJson(sprintUrl).then((data) => {
+app.get('/smartzones', (request, response) => {
+  let slug = request.query.smartzonesname || 'Sarah'
+  let smartzonesUrl = url + '/smartzones/' + name
+  fetchJson(smartzonestUrl).then((data) => {
     // console.log(data)
-    response.render('sprint', data)
+    response.render('smartzones', data)
   })
 })
 

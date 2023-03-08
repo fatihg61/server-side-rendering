@@ -1,19 +1,13 @@
 <%- include('./partials/head.ejs') %>
 
-<% semesters.forEach(semester => { %>
+<% smartzones.forEach(smartzone => { %>
  <article>
-  <h2><%= semester.title %></h2>
-  <ol>
-  <% semester.sprints.forEach(sprint => { %>
-    <% if (sprint.sprintNumber !== null) { %>
-     <li>
-      <a href="/sprint/?sprintSlug=<%= sprint.slug %>">
-        <%= sprint.title %>
-      </a>
-    </li>
-    <% } %>
-  <% }) %>
-  </ol>
+  <h2><%= smartzone.name %></h2>
+  <p><%= smartzone.name %></p>
+  <p><%= smartzone.geolocation %></p>
+  <p><%= smartzone.town %></p>
+  <p><%= smartzone.address %></p>
+  <p><%= smartzone.NL %></p>
  </article>
 <% }) %>
 
