@@ -1,7 +1,5 @@
 # Server Side Rendering
 
-Een live-coded voorbeeld van Server Side Rendering (SSR) voor de Ad Frontend Design & Development.
-
 ## Inhoudsopgave
 
 - [Beschrijving](#beschrijving)
@@ -13,19 +11,23 @@ Een live-coded voorbeeld van Server Side Rendering (SSR) voor de Ad Frontend Des
 
 ## Beschrijving
 
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Met dit project met ik begonnen met een pagine bouwen voor coding the curbs dat werkt met REST API en Json
+![image](https://user-images.githubusercontent.com/112856020/225879025-1922d99c-8514-4a8d-a7fd-4fa1d251b3f3.png)
+https://wild-gold-crocodile-veil.cyclic.app/
 
 ## Kenmerken
 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+HTML 
+CSS
+NODEJS 
+REST API
 
 ## Installatie
 
 ## Gebruik
 
 ## Bronnen
+FDND TALKS
 
 ## Licentie
 
