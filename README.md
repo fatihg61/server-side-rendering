@@ -11,7 +11,7 @@
 
 ## Beschrijving
 
-Met dit project met ik begonnen met een pagine bouwen voor coding the curbs dat werkt met REST API en Json
+Met dit project ben ik begonnen met een pagine bouwen voor coding the curbs dat werkt met REST API en Json
 ![image](https://user-images.githubusercontent.com/112856020/225879025-1922d99c-8514-4a8d-a7fd-4fa1d251b3f3.png)
 https://wild-gold-crocodile-veil.cyclic.app/
 
